@@ -1,17 +1,20 @@
-package Connectors;public class Celebrity {
-    public int celebid;
+package Connectors;
+public class Celebrity {
+    public int celebId;
     public String name;
     public String imageURL;
 
+    CelebrityImageService celebrityImageService;
+
     public void setCelebid(int celebid) {
-        this.celebid = celebid;
+        this.celebId = celebid;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+    public void setImage(CelebrityImageService service) {
+        imageURL=service.Search();
     }
 }

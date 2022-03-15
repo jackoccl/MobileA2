@@ -20,12 +20,16 @@ public class CelebrityService {
     private static final String ENDPOINT = "https://celebritybucks.com/developers/export/JSON";
     private String url;
     private final RequestQueue queue;
+
+
     private ArrayList<Celebrity> celebs = new ArrayList<>();
+
+    public ArrayList<Celebrity> getCelebs() {
+        return celebs;
+    }
 
     public CelebrityService(Context context){
         queue = Volley.newRequestQueue(context);
-
-
     }
     public ArrayList<Celebrity> Search(final VolleyCallBack callBack){
         String endpoint = ENDPOINT;
@@ -37,7 +41,6 @@ public class CelebrityService {
                         try{
                             JSONObject object = items.getJSONObject(i);
                             Celebrity celeb = gson.fromJson(object.toString(),Celebrity.class);
-                            System.out.println(celeb.name);
                             celebs.add(celeb);
                         }catch(JSONException e){
 
