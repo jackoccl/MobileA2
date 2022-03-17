@@ -3,18 +3,20 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.example.assignment2"
         minSdk 21
-        targetSdk 32
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    task wrapper(type: Wrapper){
+        gradleVersion = '7.4.1'
+    }
     buildTypes {
         release {
             minifyEnabled false

@@ -1,4 +1,4 @@
-package Connectors;
+package Connector;
 
 import java.util.ArrayList;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package Connectors;
+package Connector;
 
 public interface VolleyCallBack {
     void onSuccess();

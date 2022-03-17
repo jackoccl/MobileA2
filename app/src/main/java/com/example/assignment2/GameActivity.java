@@ -14,10 +14,10 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.Random;
 
-import Connectors.Celebrity;
-import Connectors.CelebrityImageService;
-import Connectors.CelebrityService;
-import Connectors.VolleyCallBack;
+import Connector.Celebrity;
+import Connector.CelebrityImageService;
+import Connector.CelebrityService;
+import Connector.VolleyCallBack;
 
 public class GameActivity extends AppCompatActivity {
     CelebrityService celebService;

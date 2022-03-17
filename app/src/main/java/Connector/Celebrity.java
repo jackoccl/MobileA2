@@ -1,4 +1,4 @@
-package Connectors;
+package Connector;
 public class Celebrity {
     public int celebId;
     public String name;

@@ -1,4 +1,4 @@
-package Connectors;
+package Connector;
 
 import android.content.Context;
 import android.content.SharedPreferences;
